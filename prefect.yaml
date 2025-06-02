@@ -1,9 +1,6 @@
-name: stock-data-pipeline
-version: "1.0"
-entrypoint: extraction/data_extraction.py:data_extraction
-
 deployments:
   - name: stock-data-pipeline
+    entrypoint: extraction/data_extraction.py:data_extraction
     schedule: null
     work_pool:
       name: data-pipeline
