@@ -31,5 +31,7 @@ jobs:
 
         - name: Deploy Prefect Flow
           run: |
+            cd $GITHUB_WORKSPACE
+            ls -la
             prefect deploy --all
 
