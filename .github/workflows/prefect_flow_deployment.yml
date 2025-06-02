@@ -27,7 +27,7 @@ jobs:
 
         - name: Authenticate with Prefect Cloud
           run: |
-            prefect cloud login --key ${{ secrets.PREFECT_API_KEY }}
+            prefect cloud login --key ${{ secrets.PREFECT_API_KEY }}  --workspace "855a2382-edeb-4391-b6c6-ef9d9d6b0279/f4caa1a4-f95b-41a6-8f87-2879c5fb4d3d"
 
         - name: Deploy Prefect Flow
           run: |
