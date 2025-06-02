@@ -18,7 +18,12 @@ jobs:
         - name: Set up Python
           uses: actions/setup-python@v4
           with:
-            python-version: '3.12'
+            python-version: '3.10'
+
+        - name: Debug working directory
+          run: |
+            echo "Workspace: ${{ github.workspace }}"
+            ls -la ${{ github.workspace }}
           
         - name: Install dependencies
           run: |
