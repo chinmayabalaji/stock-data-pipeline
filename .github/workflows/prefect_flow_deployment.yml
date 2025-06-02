@@ -37,6 +37,8 @@ jobs:
 
         - name: Deploy Prefect Flow
           run: |
-            prefect deployment apply prefect.yaml
+            cd $GITHUB_WORKSPACE
+            ls -la
+            prefect deploy --all
           working-directory: ${{ github.workspace }}
 
