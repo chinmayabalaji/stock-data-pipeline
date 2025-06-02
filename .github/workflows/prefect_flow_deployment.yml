@@ -34,4 +34,5 @@ jobs:
             cd $GITHUB_WORKSPACE
             ls -la
             prefect deploy --all
+          working-directory: ${{ github.workspace }}
 
