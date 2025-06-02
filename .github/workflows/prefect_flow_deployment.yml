@@ -27,6 +27,7 @@ jobs:
 
         - name: Authenticate with Prefect Cloud
           run: |
+            echo ${{ secrets.PREFECT_API_KEY }}
             prefect cloud login --key ${{ secrets.PREFECT_API_KEY }}  --workspace "chinmaya-balaji/default"
 
         - name: Deploy Prefect Flow
