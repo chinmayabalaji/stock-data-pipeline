@@ -1,0 +1,5 @@
+name: Stock Data Pipeline
+version: 1.0
+entrypoint: extraction/data_extraction.py:data_extraction
+work_pool:
+  name: data-pipeline
